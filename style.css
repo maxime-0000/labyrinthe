@@ -1,0 +1,250 @@
+/* Elements principaux de la page */
+
+body {
+background-color: rgb(image/html-code); /* couleur du fond d'ecran */ 
+color : darkslategray; 
+}
+   
+
+    /* positionner image dans le header */
+.img_f_right
+      { 
+float:right; /* image folttante */
+padding: 7px; /* marge interieure */ 
+
+      }
+.image1
+{
+	width : 300px;
+	height : 200px; 
+	
+}
+
+	
+	
+
+header 
+{ font-family:cursive; /* choix police */
+   
+    color: black;                /* couleur police */
+    font-weight: 600;    /* epaisseur police */
+    font-style : oblique ; /*style normal, italic et oblique */
+    text-align : left; /*alignement texte left, right, center, justify */
+    padding : 0px;  /* marge interieure */
+  }
+@media screen and (min-width: 1200px)
+{ header
+  {
+  font-size: 3.2em;              /* taille police */
+  }
+}
+@media screen and (max-width: 1200px)
+{header
+ {
+  font-size: 2.5em;              /* taille police */
+  }
+}
+
+
+@media screen and (min-width: 1200px)
+{
+
+/* le nav */ 
+
+nav 
+     {  background-color: rgb(image/html-code); 
+        border: 2px solid rgb(image/html-code); 
+        /*float: top; */
+        height : 50%;
+        border-radius: 30px;
+        margin : 35px;   
+        padding : 2px;
+        text-align: center;
+        text-decoration: underline;
+     
+}
+     
+
+nav a 
+
+   {   
+       /* display:block; */ /* mettre les liens en colonne block */ 
+       font-family: "Times New Roman", Georgia, Serif;
+       font-size: 1.8em;              /* taille police */
+       text-decoration:none;        /* empecher le soulignement */
+       color: black;            /* couleur police */
+       font-weight: 600  ;     /* epaisseur police */
+      font-style : oblique ; /*style normal, italic et oblique */
+       text-align : left ;/*alignement texte left, right, center, justify */
+      /*    word-spacing: 10%; */ /*espacement entre les mots */
+       margin : 2.0% ;/* espacement entre les liens */ 
+     /*  line-height:38px; */ /* espacement ligne */
+
+    }  
+
+nav a:hover /* motif survol lien*/
+   {  text-shadow: 1px 1px 0px black; /* ombre sur les lettres */
+   /*text-shadow: none ; */
+   }
+
+}
+
+@media screen and (max-width: 1200px)
+
+{
+/* le nav */ 
+
+nav {
+    font-size:1em ; 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+nav p 
+{
+    font-family: "Times New Roman", Georgia, Serif; /* choix de la police */
+    font-size: 1em;              /* taille police */
+    color: black;               /* couleur police */
+    font-weight: 600 ;      /* epaisseur police */
+    font-style : oblique ; /*style normal, italic et oblique */
+    text-align : center; /*alignement texte left, right, center, justify */
+}
+
+nav a {
+    font-size: 1.4em;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+nav a:hover, .offcanvas a:focus{
+    color: black;
+}
+
+nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+}
+
+ 
+
+
+section h1 
+
+   {font-family:learning_curveregular;
+ 
+
+padding : 5px;
+border-left : 5px solid blue;  /* bordure Ã  gauche */
+/* text-shadow: 2px 2px 4px black;/* ombre sur les lettres */
+border-bottom : 2px solid navy; /* bordure sur le texte en bas*/
+/* box-shadow: 3px 3px 1px blue;*/
+ 
+}
+
+
+@media screen and (min-width: 1200px)
+{
+  section h1
+   {
+   font-size: 3.1em; 
+   }
+}
+
+@media screen and (max-width: 1200px)
+{
+section h1 
+
+     {
+    font-size:  2em;
+ 
+   }
+
+}
+
+
+
+footer
+{
+/* float : bottom; */
+
+/*position: absolute; bottom: 0;*/
+}
+
+footer p
+{
+font-family: "Times New Roman", Georgia, Serif;
+text-align: center;
+color : black;
+font-weight: 300 ;  /* epaisseur police */
+	
+}
+
+@media screen and (min-width: 1200px)
+{
+ footer p
+  {
+font-size:  1.1em ;      /* taille police */
+  }
+}
+
+@media screen and (max-width: 1200px)
+{
+  
+  footer p
+  {
+   font-size:  0.8em ;      /* taille police */
+
+   }
+}
+
+/* hamburguer ce qui doit etre affiche pour le portable mais pas pour l'ordi*/
+
+@media screen and (min-width: 1000px)
+{
+   .hamburger
+  { display : none;
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px)
+{
+.hamburger {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+/* Ce qui doit etre affiche popur l'ordi mais pas pour le portable */
+@media screen and (min-width: 1200px)
+{
+.pc
+  {
+  }
+}
+@media screen and (max-width: 1200px)
+{
+.pc
+  {display : none;
+  }
+}
+
+
