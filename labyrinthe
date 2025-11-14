@@ -15,9 +15,9 @@ echo '<meta name="author" content="Patrick JAUD">';
 
 
 /* inclure les titres */ 
-if (isset($_GET['menu']))  # isset signifie si la variable existe. 
+if (isset($_GET['pages']))  # isset signifie si la variable existe. 
 { 
-      switch($_GET['menu']) # pour étudier les différentes valeurs
+      switch($_GET['pages']) # pour étudier les différentes valeurs
       {
     
       case '1':  # si menu vaut 1
@@ -62,10 +62,10 @@ echo '</head>';
 
 
      
-if (isset($_GET['menu']))
+if (isset($_GET['pages']))
 {
     
-      switch($_GET['menu'])
+      switch($_GET['pages'])
       {
 
       case '1': 

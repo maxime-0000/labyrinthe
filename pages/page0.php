@@ -1,6 +1,8 @@
-<h1 class = "titreT"> Page d'accueil  </h1>
+<!-- <h1 class = "titreT"> Couloir 13 : Départ  </h1> -->
 
 <!doctype html>
+
+
 <html lang="fr">
 <head>
 

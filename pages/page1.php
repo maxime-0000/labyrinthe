@@ -28,7 +28,7 @@
    
         
            
- 
+ <button onclick="window.location.href='index.php'">Aller à l'autre page</button>
 
          
        
