@@ -3,13 +3,15 @@
    <head> 
 <meta charset="utf-8" >
 <link rel="stylesheet" href="style.css" >
+<title>Labyrinthe ya zebi</title>
 
   
 <?php 
 /* vue pour mobile sans zoom */
 echo '<meta name="viewport" content="width=device-width" >';
-/* auteur : Patrick JAUD */
-echo '<meta name="author" content="Patrick JAUD">'; 
+
+echo '<meta name="author" content="Maxime DIGNE">'; 
+
 
 
 
@@ -95,7 +97,12 @@ include("include/footer.php") ;
 
 /* appel fonction javascript  */
       include("include/javascript.php");  # on inclut la fonction javascript
+
+if (isset($_GET["run"])) { ... }
+
       ?>
+
+      
 </body>
 </html>
  
