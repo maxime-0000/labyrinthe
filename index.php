@@ -1,5 +1,6 @@
 
 <title>Labyrinthe</title>
+<link rel="stylesheet" href="style.css" >
 
 <?php
 echo "<body>";
@@ -8,11 +9,11 @@ if (!isset($_GET["run"])): ?>
     <div id="accueil">
         <h1 class="debutjeux">Jeu du Labyrinthe, règles du jeu</h1>
         <ul>
-            <li>🎮 Objectif : Explorer le labyrinthe et trouver la sortie.</li>
-            <li>Déplacements : Cliquez sur un couloir pour avancer.</li>
-            <li>Clés 🔑 : Ramassez-les pour ouvrir les passages verrouillés.</li>
-            <li>Passages verrouillés : Utilisez une clé pour les franchir.</li>
-            <li>Recommencer : Cliquez sur “Recommencer une partie” pour repartir du début.</li>
+            🎮 Objectif : Explorer le labyrinthe et trouver la sortie. <br>
+            Déplacements : Cliquez sur un couloir pour avancer.<br>
+            Clés 🔑 : Ramassez-les pour ouvrir les passages verrouillés.<br>
+            Passages verrouillés : Utilisez une clé pour les franchir.<br>
+            Recommencer : Cliquez sur “Recommencer une partie” pour repartir du début.<br>
         </ul>
         <button id="btnStart">Lancer le jeu</button>
     </div>
