@@ -3,12 +3,13 @@
 
 
 body {
-    background-color: #fff; /* fond blanc */
-    color: #000;            /* texte noir */
+    background-color: #000000; /* fond blanc */
+    color: #FFFFFF;            /* texte noir */
     font-family: "Times New Roman", Georgia, Serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    
 }
 
 
@@ -149,3 +150,75 @@ footer p {
 /*Jeu du labyrinthe*/
 
 
+button {
+  display: inline-block;
+  background-color: #FF0000;
+  border-radius: 5px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: px;
+  padding: 20px;
+  width: 200px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/*--------*/
+
+/* Boutons de déplacement */
+.btn-move {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 6px 0;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.btn-move:hover {
+    background-color: #217dbb;
+    transform: translateY(-2px);
+}
+
+/* Boutons d'action (reset, utiliser la clé, etc.) */
+.btn-action {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 10px;
+    background-color: #e67e22;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.btn-action:hover {
+    background-color: #cf6d16;
+    transform: translateY(-2px);
+}
+
+/* Style du bouton classique <button> */
+button {
+    padding: 10px 18px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}

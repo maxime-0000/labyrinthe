@@ -3,7 +3,7 @@
    <head> 
 <meta charset="utf-8" >
 <link rel="stylesheet" href="style.css" >
-<title>Labyrinthe ya zebi</title>
+<title>Labyrinthe</title>
 
   
 <?php 
@@ -19,7 +19,7 @@ echo '<meta name="author" content="Maxime DIGNE">';
 /* inclure les titres */ 
 if (isset($_GET['pages']))  # isset signifie si la variable existe. 
 { 
-      switch($_GET['pages']) # pour étudier les différentes valeurs
+      switch($_GET['pages']) 
       {
     
       case '1':  # si menu vaut 1
@@ -57,47 +57,17 @@ echo '</head>';
 <?php include("include/header.php") ; 
 
       include("include/nav.php") ; 
-    
-
-      
-/* les pages */
-
+?>
 
      
-if (isset($_GET['pages']))
-{
-    
-      switch($_GET['pages'])
-      {
 
-      case '1': 
-      include("pages/page1.php");
-      break;
-      
-      case '2':
-      include("pages/page2.php");
-      break;
-
-      default:
-      include("pages/page0.php") ;
-      }
-}
-
-else 
-{
-include("pages/page0.php") ;
-
-}?>
 
 
 
 <?php   
 include("include/footer.php") ;
-
-
 /* appel fonction javascript  */
       include("include/javascript.php");  # on inclut la fonction javascript
-
 if (isset($_GET["run"])) { ... }
 
       ?>
